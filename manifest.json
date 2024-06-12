@@ -1,0 +1,9 @@
+{
+    "manifest_version": 2,
+    "name": "FirefoxPicker",
+    "version": 1.0,
+    "description": "Allows you to choose color codes with a easy to use color picker",
+    "icons": {
+        "48": "icon48.png"
+    }
+}
