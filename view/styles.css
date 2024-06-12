@@ -1,0 +1,83 @@
+html, body {
+    width: 400px;
+    height: 500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Segoe UI", Tahoma, Verdana, Helvetica, Arial, Sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.75rem;
+    border: 2px solid black;
+}
+
+.hsl-slider-inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.hsl-slider-inputs-container > input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 35px;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.hsl-slider-inputs-container > input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 100%;
+    width: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.hsl-slider-inputs-container > input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    height: 20px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+#hsl-slider-input-hsl-value-hue {
+    background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+}
+
+#hsl-slider-input-hsl-value-light {
+    background: linear-gradient(to right, #a1a1a1, #ff0000)
+}
+
+#hsl-slider-input-hsl-value-saturation {
+    background: linear-gradient(to right, #000000, #ff0000, #ffffff)
+}
+
+.color-code-output-container {
+    display: flex;
+    justify-content: center;
+}
+
+.color-code-output-container-child-position-container {
+    width: 50%;
+    padding: .70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 4px solid #000000;
+    border-radius: 12px;
+}

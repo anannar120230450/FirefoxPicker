@@ -1,9 +1,15 @@
 {
     "manifest_version": 2,
     "name": "FirefoxPicker",
-    "version": 1.0,
+    "version": "1.0",
     "description": "Allows you to choose color codes with a easy to use color picker",
     "icons": {
-        "48": "icon48.png"
+      "48": "icon48.png"
+    },
+    "permissions": ["activeTab"],
+    "browser_action": {
+      "default_icon": "icon32.png",
+      "default_title": "FirefoxPicker",
+      "default_popup": "view/window.html"
     }
 }
